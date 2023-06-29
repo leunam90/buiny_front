@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'ui':{
+          100: '#262626',
+          200: '#1E1E1E',
+          300: '#191919',
+          400:'#333333'
+        }
+      },
+    },
   },
   plugins: [],
 }
