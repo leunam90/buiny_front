@@ -1,9 +1,14 @@
 <template>
-    <div class="w-full h-screen bg-ui-100 text-white flex items-center justify-start p-4 flex-col gap-8">
-        <div class="p-2 rounded-lg bg-ui-200 flex flex-col gap-2 items-center">
-            Home
-            <hr class="border-ui-400 w-full">
-            <button class="bg-ui-300 p-2 rounded-lg">Test</button>
+    <div class="contenedor">
+        <div class="card flex-col w-44">
+            <h1>h1</h1>
+            <h2>h2</h2>
+            <h3>h3</h3>
+            <p>p Lorem.</p>
+            <hr class="hr">
+            <button class="btn btn-base w-full">boton base</button>
+            <button class="btn btn-ghost w-full">boton ghost</button>
+            <button class="btn btn-prim w-full">boton prim</button>
         </div>
     </div>
 </template>
