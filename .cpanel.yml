@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/buiny
-    - /bin/cp -R folder_project $DEPLOYPATH
+    - /bin/cp -R dist $DEPLOYPATH
