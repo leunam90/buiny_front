@@ -34,6 +34,6 @@
     @apply text-white/60 hover:text-white/80 
   }
   .btn-prim{
-    @apply bg-ui-300 hover:bg-ui-100 text-white/60 hover:text-white/80 
+    @apply bg-ui-prim hover:bg-ui-prim/60 text-white/60 hover:text-white/80 
   }
 }
