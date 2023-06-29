@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/buiny
+    - export DEPLOYPATH=/home/suitesta/buiny
     - /bin/cp -R dist/assets $DEPLOYPATH
     - /bin/cp -R dist/index.html $DEPLOYPATH
