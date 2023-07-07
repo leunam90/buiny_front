@@ -22,7 +22,7 @@
     @apply w-full border-ui-400/60 my-2
   }
   .card h1{
-    @apply leading-none text-white/80 text-2xl
+    @apply leading-none text-white/80 text-3xl
   }
   .card h2{
     @apply leading-none text-white/60 text-xl
