@@ -4,7 +4,16 @@
 
 @layer components {
   .contenedor {
-    @apply w-full h-screen overflow-y-auto bg-ui-100 text-white flex flex-col items-center justify-start p-6 gap-6;
+    @apply w-full h-screen overflow-y-auto   p-6 gap-6;
+  }
+  .fcicjs{
+    @apply flex flex-col items-center justify-start
+  }
+  .fcicjc{
+    @apply flex flex-col items-center justify-center
+  }
+  .ffricjs{
+    @apply flex flex-row items-center justify-start
   }
   .card {
     @apply bg-ui-200 rounded-xl p-4 gap-2 flex;
@@ -13,19 +22,25 @@
     @apply w-full border-ui-400/60 my-2
   }
   .card h1{
-    @apply leading-none text-white/80
+    @apply leading-none text-white/80 text-2xl
   }
   .card h2{
-    @apply leading-none text-white/60
+    @apply leading-none text-white/60 text-xl
   }
   .card h3{
-    @apply leading-none text-white/40
+    @apply leading-none text-white/40 text-lg
   }
   .card p{
-    @apply leading-none text-white/70
+    @apply leading-none text-white/70 text-xs
+  }
+  p{
+    @apply leading-none opacity-70 text-xs
+  }
+  a{
+    @apply leading-none opacity-70 text-xs
   }
   .btn{
-    @apply  p-2 rounded-lg  
+    @apply  p-2 rounded-lg text-xs
   }
   .btn-base{
     @apply  bg-ui-300 hover:bg-ui-100 text-white/60 hover:text-white/80 
@@ -36,4 +51,7 @@
   .btn-prim{
     @apply bg-ui-prim hover:bg-ui-prim/60 text-white/60 hover:text-white/80 
   }
+  .input{
+    @apply text-ui-400 p-2 rounded-lg text-xs w-full bg-ui-300 border-none
+  } 
 }

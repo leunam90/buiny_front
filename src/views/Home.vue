@@ -1,21 +1,48 @@
 <template>
-    <div class="contenedor">
-        <div class="card flex-col w-44">
-            <h1>h1</h1>
-            <h2>h2</h2>
-            <h3>h3</h3>
-            <p>p Lorem.</p>
+    <div class="contenedor fcicjc bg-ui-100 text-white">
+        <div class="card flex-col w-72 fcicjc mt-auto">
+            <img src="../assets/logo2.svg" class="w-36 opacity-20" alt="">
+            <h3>Bienvenido</h3>
             <hr class="hr">
-            <button class="btn btn-base w-full">boton base</button>
-            <button class="btn btn-ghost w-full">boton ghost</button>
-            <button class="btn btn-prim w-full">boton prim</button>
+            <div class="relative w-full">
+                <input type="text" id="user" class="block px-2.5 pb-3 pt-3 w-full text-xs text-ui-400 bg-transparent rounded-lg border-1 border-ui-500/10 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-500 peer" placeholder=" " />
+                <label for="user" class="absolute flex items-center justify-start gap-2 text-xs text-ui-500  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-ui-200  px-2 peer-focus:px-2 peer-focus:text-blue-500  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">
+                    <ph-user :size="12" weight="bold" />
+                    Usuario</label>
+            </div>
+            <div class="relative w-full">
+                <input type="password" id="password" class="block px-2.5 pb-3 pt-3 w-full text-xs text-ui-400 bg-transparent rounded-lg border-1 border-ui-500/10 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-500 peer" placeholder=" " />
+                <label for="password" class="absolute flex items-center justify-start gap-2 text-xs text-ui-500  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-ui-200  px-2 peer-focus:px-2 peer-focus:text-blue-500  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">
+                    <ph-Lock :size="12" weight="bold" />
+                    Contraseña</label>
+            </div>
+            <button class="btn btn-prim w-full p-3">Entrar</button>
+            <button class="btn btn-ghost w-full p-1 opacity-30 hover:opacity-80">Olvidé mi contraseña</button>
+        </div>
+        <div class="ffricjs gap-1 mt-auto opacity-30 hover:opacity-100">
+            <p>Desarrollado por</p>
+            <a href="www.suitestacks.com" class="ffricjs gap-1 hover:text-blue-500 hover:opacity-100">
+                <svg id="Capa_2" data-name="Capa 2" class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195.71 223.46">
+                    <g id="Capa_1-2" data-name="Capa 1">
+                        <g>
+                            <g class="cls-2 ">
+                                <path fill="currentColor" class="cls-1" d="M97.85,223.46c-2.31,0-4.61-.6-6.67-1.79L6.59,172.45c-4.06-2.37-6.59-6.76-6.59-11.46V62.46c0-4.7,2.53-9.09,6.59-11.46L91.19,1.79c4.12-2.39,9.22-2.39,13.33,0l84.6,49.21c4.06,2.36,6.59,6.76,6.59,11.46v22.37c0,2.8-2.27,5.08-5.08,5.08s-5.08-2.27-5.08-5.08v-22.37c0-1.1-.59-2.13-1.54-2.68L99.41,10.57c-.96-.56-2.16-.56-3.12,0L11.7,59.78c-.95,.55-1.54,1.58-1.54,2.68v98.53c0,1.1,.59,2.13,1.54,2.68l84.6,49.21c.96,.56,2.16,.56,3.12,0l84.59-49.21c.95-.55,1.54-1.58,1.54-2.68v-22.19c0-2.8,2.27-5.08,5.08-5.08s5.08,2.27,5.08,5.08v22.19c0,4.7-2.53,9.1-6.59,11.46l-84.59,49.21c-2.06,1.2-4.36,1.79-6.67,1.79Z" />
+                            </g>
+                            <path class="pat1" fill="currentColor" d="M62.59,97.92c0-3.92,2.1-7.59,5.49-9.57l30.35-17.73v-24.08c0-5.16-4.2-9.35-9.36-9.35-1.63,0-3.26,.44-4.7,1.29l-48.37,28.26c-2.85,1.67-4.63,4.76-4.63,8.07v55.88c0,5.16,4.2,9.35,9.35,9.35h0c1.62,0,3.23-.44,4.66-1.26l17.2-9.93v-30.92Z" />
+                            <path class="pat2" fill="currentColor" d="M154.97,85.17c-1.28,0-2.59,.33-3.82,1.05l-48.37,28.26c-2.33,1.36-3.77,3.86-3.77,6.57v55.88c0,4.44,3.64,7.61,7.62,7.61,1.27,0,2.56-.32,3.79-1.03l48.37-27.93c2.35-1.36,3.8-3.87,3.8-6.58v-56.21c0-4.44-3.65-7.61-7.62-7.61Z" />
+                            <path class="pat3" fill="currentColor" d="M122.03,62.05c-1.28,0-2.59,.33-3.82,1.05l-48.37,28.26c-2.33,1.36-3.77,3.86-3.77,6.57v55.88c0,4.44,3.64,7.61,7.62,7.61,1.27,0,2.57-.32,3.79-1.03l18.07-10.43v-28.91c0-3.92,2.1-7.59,5.49-9.57l28.61-16.72v-25.1c0-4.44-3.65-7.62-7.62-7.62Z" />
+                        </g>
+                    </g>
+                </svg>
+                SuiteStacks
+            </a>
         </div>
     </div>
 </template>
 
 <script setup>
 import { useTestStore } from '../stores/test.js';
-import { PhFeather, PhCube } from "@phosphor-icons/vue";
+import { PhUser, PhLock } from "@phosphor-icons/vue";
 const store = useTestStore()
 
 </script>
