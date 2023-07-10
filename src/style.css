@@ -16,22 +16,22 @@
     @apply flex flex-row items-center justify-start
   }
   .card {
-    @apply bg-ui-200 rounded-xl p-4 gap-2 flex;
+    @apply gap-2;
   }
   .card .hr{
-    @apply w-full border-ui-400/60 my-2
+    @apply w-full border-slate-200 my-2
   }
   .card h1{
-    @apply leading-none text-white/80 text-3xl
+    @apply leading-none text-3xl
   }
   .card h2{
-    @apply leading-none text-white/60 text-xl
+    @apply leading-none text-xl
   }
   .card h3{
-    @apply leading-none text-white/40 text-lg
+    @apply leading-none text-lg
   }
   .card p{
-    @apply leading-none text-white/70 text-xs
+    @apply leading-none text-xs
   }
   p{
     @apply leading-none opacity-70 text-xs
@@ -43,13 +43,13 @@
     @apply  p-2 rounded-lg text-xs
   }
   .btn-base{
-    @apply  bg-ui-300 hover:bg-ui-100 text-white/60 hover:text-white/80 
+    @apply  bg-ui-300 hover:bg-ui-100 text-black/60 hover:text-black/80 
   }
   .btn-ghost{
-    @apply text-white/60 hover:text-white/80 
+    @apply text-black/60 hover:text-black/80 
   }
   .btn-prim{
-    @apply bg-ui-prim hover:bg-ui-prim/60 text-white/60 hover:text-white/80 
+    @apply bg-blue-500 hover:shadow text-white
   }
   .input{
     @apply text-ui-400 p-2 rounded-lg text-xs w-full bg-ui-300 border-none

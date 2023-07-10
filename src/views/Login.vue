@@ -1,29 +1,29 @@
 <template>
-    <div class="contenedor fcicjc bg-ui-100 text-white">
+    <div class="contenedor fcicjc bg-slate-50">
         <div class="card flex-col w-72 fcicjc mt-auto">
-            <div class="fcicjc gap-2 opacity-20 relative">
-                <img src="../assets/logo2.svg" class="w-36" alt="logo">
-                <h1 class="font-bold mb-1">Buiny</h1>
+            <div class="fcicjc gap-2 relative">
+                <img src="../assets/logo1.svg" class="w-36 opacity-50" alt="logo">
+                <img src="../assets/BUINY2.svg" class="w-16 opacity-50" alt="logo">
             </div>
             <hr class="hr">
 
             <div class="relative w-full">
-                <input autocomplete="none" v-model="email" type="text" id="user" class="block px-2.5 pb-3 pt-3 w-full text-xs text-ui-400 bg-transparent rounded-lg border-1 border-ui-500/10 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-500 peer" placeholder=" " />
-                <label for="user" class="absolute flex items-center justify-start gap-2 text-xs text-ui-500  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-ui-200  px-2 peer-focus:px-2 peer-focus:text-blue-500  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">
+                <input autocomplete="none" v-model="email" type="text" id="user" class="block px-2.5 pb-3 pt-3 w-full text-xs text-ui-400 bg-transparent rounded-lg border-1 border-slate-200 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-500 peer" placeholder=" " />
+                <label for="user" class="absolute flex items-center justify-start gap-2 text-xs text-ui-500  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-slate-50  px-2 peer-focus:px-2 peer-focus:text-blue-500  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">
                     <PhEnvelope :size="12" weight="bold" />
                     Email
                 </label>
             </div>
             <div class="relative w-full">
-                <input autocomplete="none" readonly onfocus="this.removeAttribute('readonly');" v-model="password" type="password" id="password" class="block px-2.5 pb-3 pt-3 w-full text-xs text-ui-400 bg-transparent rounded-lg border-1 border-ui-500/10 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-500 peer" placeholder=" " />
-                <label for="password" class="absolute flex items-center justify-start gap-2 text-xs text-ui-500  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-ui-200  px-2 peer-focus:px-2 peer-focus:text-blue-500  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">
+                <input autocomplete="none" readonly onfocus="this.removeAttribute('readonly');" v-model="password" type="password" id="password" class="block px-2.5 pb-3 pt-3 w-full text-xs text-ui-400 bg-transparent rounded-lg border-1 border-slate-200 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-500 peer" placeholder=" " />
+                <label for="password" class="absolute flex items-center justify-start gap-2 text-xs text-ui-500  duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-slate-50  px-2 peer-focus:px-2 peer-focus:text-blue-500  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">
                     <ph-Lock :size="12" weight="bold" />
                     Contraseña</label>
             </div>
 
             <button @click="login" class="btn btn-prim w-full p-3">Entrar</button>
             <button class="btn btn-ghost w-full p-1 opacity-30 hover:opacity-80">Olvidé mi contraseña</button>
-            <div v-if="errorMessage" class="bg-red-500/40 text-red-500/80 px-2 rounded py-1 text-xs">
+            <div v-if="errorMessage" class="bg-red-200 text-red-500 px-2 rounded py-1 text-xs">
                 {{ errorMessage }}
             </div>
         </div>
