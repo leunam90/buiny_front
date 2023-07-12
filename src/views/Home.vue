@@ -1,6 +1,6 @@
 <template>
-    <div class="contenedor fcicjc bg-slate-50 text-slate-800">
-        <h1>Home</h1>
+    <div class="contenedor fcicjs bg-slate-50 text-slate-800 relative overflow-y-auto">
+        <h1>Bienvenido</h1>
         <BInput v-model="inputValue" inputId="myInput" labelText="Input Label" />
         <h1>o {{ inputValue }} o</h1>
     </div>

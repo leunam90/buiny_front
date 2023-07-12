@@ -33,9 +33,9 @@
   .card p{
     @apply leading-none text-xs
   }
-  p{
+  /* p{
     @apply leading-none opacity-70 text-xs
-  }
+  } */
   a{
     @apply leading-none opacity-70 text-xs
   }

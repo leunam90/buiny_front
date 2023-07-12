@@ -7,21 +7,23 @@
             </div>
             <hr class="hr">
 
-            <div class="relative w-full">
-                <input autocomplete="none" v-model="email" type="text" id="user" class="inputcard peer" placeholder=" " />
-                <label for="user" class="labelinputcard peer-focus:px-2 peer-focus:text-blue-500  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4">
-                    <PhEnvelope :size="12" weight="bold" />
-                    Email
-                </label>
-            </div>
-            <div class="relative w-full">
-                <input autocomplete="none" readonly onfocus="this.removeAttribute('readonly');" v-model="password" type="password" id="password" class="inputcard peer" placeholder=" " />
-                <label for="password" class="labelinputcard peer-focus:px-2 peer-focus:text-blue-500  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4">
-                    <ph-Lock :size="12" weight="bold" />
-                    Contraseña</label>
-            </div>
+            <form action="" class="w-full gap-2 flex flex-col items-center justify-start">
+                <div class="relative w-full">
+                    <input autocomplete="none" v-model="email" type="text" id="user" class="inputcard peer" placeholder=" " />
+                    <label for="user" class="labelinputcard peer-focus:px-2 peer-focus:text-blue-500  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4">
+                        <PhEnvelope :size="12" weight="bold" />
+                        Email
+                    </label>
+                </div>
+                <div class="relative w-full">
+                    <input autocomplete="none" v-model="password" type="password" id="password" class="inputcard peer" placeholder=" " />
+                    <label for="password" class="labelinputcard peer-focus:px-2 peer-focus:text-blue-500  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4">
+                        <ph-Lock :size="12" weight="bold" />
+                        Contraseña</label>
+                </div>
+                <button @click="login" class="btn btn-prim w-full p-3">Entrar</button>
+            </form>
 
-            <button @click="login" class="btn btn-prim w-full p-3">Entrar</button>
             <button class="btn btn-ghost w-full p-1 opacity-30 hover:opacity-80">Olvidé mi contraseña</button>
             <div v-if="errorMessage" class="bg-red-200 text-red-500 px-2 rounded py-1 text-xs">
                 {{ errorMessage }}
