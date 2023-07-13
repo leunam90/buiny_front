@@ -1,8 +1,8 @@
 <template>
     <div class="overflow-hidden transition-all duration-300 menu">
-        <div class="w-9 h-9 flex items-center justify-center rounded-md text-blue-500 bg-slate-200/70 lcontainer">
+        <div class="w-9 h-9 flex items-center justify-center rounded-md text-white bg-slate-500 lcontainer">
             <Blogo class="h-4 flex-none lb" />
-            <Buinylogo class="h-4 flex-none lfull hidden" />
+            <Buinylogo class="h-4 flex-none lfull hidden text-slate-500" />
         </div>
         <router-link to="/home" class="menuitem">
             <PhHouse :size="22" weight="duotone" class="flex-none" />
