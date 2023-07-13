@@ -1,54 +1,90 @@
 <template>
-    <div :class="'state' + menuState" class="overflow-hidden transition-all duration-300 ">
-        <div @click="updateState" class="w-10 h-10 flex items-center justify-center rounded-xl">
-            <ph-squares-four :size="20" weight="fill" class="hover:rotate-45" />
+    <div class="overflow-hidden transition-all duration-300 menu">
+        <div class="w-9 h-9 flex items-center justify-center rounded-md text-blue-500 bg-slate-200/70 lcontainer">
+            <Blogo class="h-4 flex-none lb" />
+            <Buinylogo class="h-4 flex-none lfull hidden" />
         </div>
-        {{ menuState }}
-        <div class="menuitem flex items-center justify-center gap-2 px-2 flex-none w-full h-8 bg-slate-100 hover:bg-slate-200 rounded">
-            <ph-user :size="18" weight="regular" class="flex-none" />
-            <p class="text-xs font-medium">Usuarios</p>
-        </div>
+        <router-link to="home" class="menuitem">
+            <PhHouse :size="22" weight="duotone" class="flex-none" />
+            <p class="text-xs font-medium">Dashboard</p>
+        </router-link>
+        <router-link to="dashboard" class="menuitem">
+            <PhChartLineUp :size="22" weight="duotone" class="flex-none" />
+            <p class="text-xs font-medium">Dashboard</p>
+        </router-link>
+        <router-link to="gantt" class="menuitem">
+            <PhAlignCenterVertical :size="22" weight="duotone" class="flex-none rotate-90" />
+            <p class="text-xs font-medium">Gantt</p>
+        </router-link>
+        <router-link to="presupuesto" class="menuitem">
+            <PhMoney :size="22" weight="duotone" class="flex-none" />
+            <p class="text-xs font-medium">Presupuesto</p>
+        </router-link>
+        <router-link to="configuracion" class="menuitem">
+            <PhSlidersHorizontal :size="22" weight="duotone" class="flex-none" />
+            <p class="text-xs font-medium">Configuración</p>
+        </router-link>
+        <router-link to="profile" class="flex items-center justify-center w-full gap-2 p-2 rounded-md relative opacity-100 mt-auto">
+            <div class="w-7 h-7 bg-blue-500 ring  text-white rounded-full flex-none text-xs flex items-center justify-center font-medium">
+                <h1>EM</h1>
+            </div>
+            <p class="text-xs font-medium truncate">Eduardo Meneses</p>
+        </router-link>
+
+
+
+
     </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { PhSquaresFour, PhUser } from "@phosphor-icons/vue"
-
-const menuState = ref(1)
-
-const updateState = () => {
-    if (menuState.value === 2) {
-        menuState.value = 1
-    } else {
-        menuState.value++
-    }
-}
-
+import { PhHouse, PhChartLineUp, PhAlignCenterVertical, PhMoney, PhSlidersHorizontal } from "@phosphor-icons/vue"
+import Blogo from './Blogo.vue'
+import Buinylogo from './Buinylogo.vue'
 </script>
 
 <style scoped>
-.state1 {
-    @apply w-10 h-10 flex flex-col items-center justify-start pt-2.5 gap-5 cursor-pointer flex-none text-slate-500 bg-slate-200 rounded-full absolute top-2 left-2 z-50 transition-all duration-500
+.menu {
+    @apply w-12 h-full flex flex-col items-center justify-start cursor-pointer flex-none text-slate-400 transition-all duration-500 relative bg-white p-1 gap-2 border-r border-slate-100
 }
 
-.state1:hover {
-    @apply text-slate-700
+.menu:hover {
+    @apply w-48
 }
 
-.state2 {
-    @apply w-8 h-full flex flex-col items-center justify-start cursor-pointer flex-none text-slate-500 transition-all duration-500 relative
+.menu:hover .lb {
+    @apply hidden
 }
 
-.state2:hover {
-    @apply w-32
+.menu:hover .lfull {
+    @apply flex
+}
+
+.menu:hover .lcontainer {
+    @apply w-full px-2 mr-auto bg-transparent
+}
+
+.menuitem {
+    @apply flex items-center justify-center w-full gap-2 p-1 rounded-md relative opacity-100
+}
+
+.menuitem:hover {
+    @apply bg-slate-200/60 text-blue-400
 }
 
 .menuitem p {
     display: none;
 }
 
-.state2:hover .menuitem p {
+.menu:hover .menuitem p {
     display: flex;
+}
+
+.menu:hover .menuitem {
+    @apply justify-start
+}
+
+.router-link-active {
+    @apply text-blue-400
 }
 </style>

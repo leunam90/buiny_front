@@ -95,11 +95,18 @@ const login = async () => {
 </script>
 
 <style scoped>
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px #ffffff00 inset;
-    background-color: #ffffff00;
-    -webkit-background-color: #FAFFBD !important;
-    background-image: none !important;
-    color: #ff0000 !important;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px solid rgb(59 130 246);
+    -webkit-text-fill-color: rgb(59 130 246);
+    -webkit-box-shadow: 0 0 0px 1000px rgb(248 250 252) inset;
+    transition: background-color 5000s ease-in-out 0s;
 }
 </style>
