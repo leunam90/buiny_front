@@ -4,32 +4,33 @@
             <Blogo class="h-4 flex-none lb" />
             <Buinylogo class="h-4 flex-none lfull hidden" />
         </div>
-        <router-link to="home" class="menuitem">
+        <router-link to="/home" class="menuitem">
             <PhHouse :size="22" weight="duotone" class="flex-none" />
             <p class="text-xs font-medium">Home</p>
         </router-link>
-        <router-link to="dashboard" class="menuitem">
+        <router-link to="/dashboard" class="menuitem">
             <PhChartLineUp :size="22" weight="duotone" class="flex-none" />
             <p class="text-xs font-medium">Dashboard</p>
         </router-link>
-        <router-link to="gantt" class="menuitem">
+        <router-link to="/gantt" class="menuitem">
             <PhAlignCenterVertical :size="22" weight="duotone" class="flex-none rotate-90" />
             <p class="text-xs font-medium">Gantt</p>
         </router-link>
-        <router-link to="presupuesto" class="menuitem">
+        <router-link to="/presupuesto" class="menuitem">
             <PhMoney :size="22" weight="duotone" class="flex-none" />
             <p class="text-xs font-medium">Presupuesto</p>
         </router-link>
-        <router-link to="configuracion" class="menuitem">
+        <router-link to="/configuracion/usuarios" class="menuitem">
             <PhSlidersHorizontal :size="22" weight="duotone" class="flex-none" />
             <p class="text-xs font-medium">Configuración</p>
         </router-link>
-        <router-link to="profile" class="flex items-center justify-center w-full gap-2 p-2 rounded-md relative opacity-100 mt-auto">
-            <div class="w-7 h-7 bg-blue-500 ring  text-white rounded-full flex-none text-xs flex items-center justify-center font-medium">
+        <router-link to="/profile" class="flex items-center justify-center w-full gap-2 p-2 rounded-md relative opacity-100 mt-auto">
+            <div class="w-7 h-7 bg-blue-500 ring text-white rounded-full flex-none text-xs flex items-center justify-center font-medium">
                 <h1>EM</h1>
             </div>
             <p class="text-xs font-medium truncate">Eduardo Meneses</p>
         </router-link>
+
     </div>
 </template>
 

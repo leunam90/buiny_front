@@ -2,26 +2,27 @@
     <div class="w-full flex flex-row items-start justify-start">
         <div class="overflow-hidden transition-all duration-300 menu">
 
-            <router-link to="configuracion" class="menuitem">
+            <router-link to="/configuracion/usuarios" class="menuitem">
                 <PhUsers :size="22" weight="duotone" class="flex-none" />
                 <p class="text-xs font-medium">Usuarios</p>
             </router-link>
-            <router-link to="roles" class="menuitem">
+            <router-link to="/configuracion/roles" class="menuitem">
                 <PhUserSwitch :size="22" weight="duotone" class="flex-none" />
                 <p class="text-xs font-medium">Roles</p>
             </router-link>
-            <router-link to="posiciones" class="menuitem">
+            <router-link to="/configuracion/posiciones" class="menuitem">
                 <PhUsersThree :size="22" weight="duotone" class="flex-none" />
                 <p class="text-xs font-medium">Posiciones</p>
             </router-link>
-            <router-link to="empleados" class="menuitem">
+            <router-link to="/configuracion/empleados" class="menuitem">
                 <PhUserFocus :size="22" weight="duotone" class="flex-none" />
                 <p class="text-xs font-medium">Empleados</p>
             </router-link>
-            <router-link to="clientes" class="menuitem">
+            <router-link to="/configuracion/clientes" class="menuitem">
                 <PhUserList :size="22" weight="duotone" class="flex-none" />
                 <p class="text-xs font-medium">Clientes</p>
             </router-link>
+
 
         </div>
         <router-view />
