@@ -1,6 +1,6 @@
 <template>
     <div class="view">
-      <h1>Posciiones</h1>
+      <h1 class="viewTitle">Posiciones</h1>
     </div>
   </template>
   

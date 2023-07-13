@@ -1,6 +1,6 @@
 <template>
   <div class="view">
-    Listado de usuarios
+   <h1 class="viewTitle">Usuarios</h1>
     <pre>{{ store.usersData }}</pre>
   </div>
 </template>

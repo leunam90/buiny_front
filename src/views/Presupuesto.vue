@@ -1,5 +1,8 @@
 <template>
-    <div class="view">Presuúesto</div>
+    <div class="view">
+        <h1 class="viewTitle text-center">Presupuesto</h1>
+
+    </div>
 </template>
 
 <script setup>

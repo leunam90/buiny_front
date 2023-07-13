@@ -1,8 +1,8 @@
 <template>
     <div class="view">
-        <h1>Bienvenido</h1>
-        <BInput v-model="inputValue" inputId="myInput" labelText="Input Label" />
-        <h1>o {{ inputValue }} o</h1>
+        <h1 class="viewTitle text-center">Bienvenido</h1>
+        <!-- <BInput v-model="inputValue" inputId="myInput" labelText="Input Label" />
+        <h1>{{ inputValue }}</h1> -->
     </div>
 </template>
 
