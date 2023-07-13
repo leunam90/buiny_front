@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full flex flex-row items-start justify-start">
+    <div class="w-full h-screen flex flex-row items-start justify-start">
         <div class="overflow-hidden transition-all duration-300 menu">
 
             <router-link to="/configuracion/usuarios" class="menuitem">

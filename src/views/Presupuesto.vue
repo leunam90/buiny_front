@@ -1,5 +1,5 @@
 <template>
-    <div class="">Presuúesto</div>
+    <div class="view">Presuúesto</div>
 </template>
 
 <script setup>

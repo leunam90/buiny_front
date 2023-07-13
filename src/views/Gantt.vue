@@ -1,5 +1,5 @@
 <template>
-    <div class="">Gantt</div>
+    <div class="view">Gantt</div>
 </template>
 
 <script setup>

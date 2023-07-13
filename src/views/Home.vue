@@ -1,5 +1,5 @@
 <template>
-    <div class="contenedor fcicjs bg-white text-slate-800 relative overflow-y-auto">
+    <div class="view">
         <h1>Bienvenido</h1>
         <BInput v-model="inputValue" inputId="myInput" labelText="Input Label" />
         <h1>o {{ inputValue }} o</h1>

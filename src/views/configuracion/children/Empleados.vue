@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="view">
       <h1>Empleados</h1>
     </div>
   </template>
