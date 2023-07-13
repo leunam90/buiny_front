@@ -6,7 +6,7 @@
         </div>
         <router-link to="home" class="menuitem">
             <PhHouse :size="22" weight="duotone" class="flex-none" />
-            <p class="text-xs font-medium">Dashboard</p>
+            <p class="text-xs font-medium">Home</p>
         </router-link>
         <router-link to="dashboard" class="menuitem">
             <PhChartLineUp :size="22" weight="duotone" class="flex-none" />
@@ -30,10 +30,6 @@
             </div>
             <p class="text-xs font-medium truncate">Eduardo Meneses</p>
         </router-link>
-
-
-
-
     </div>
 </template>
 
