@@ -1,0 +1,1 @@
+import{o as e,a as o}from"./index-3700ea71.js";const r={class:"view"},i={__name:"Profile",props:{icono:{type:String,required:!1,default:""}},setup(t){return(s,a)=>(e(),o("div",r," Profile "))}};export{i as default};

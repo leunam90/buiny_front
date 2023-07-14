@@ -1,0 +1,1 @@
+import{_ as e,o as s,a as o,e as t}from"./index-3700ea71.js";const c={},_={class:"view"},a=t("h1",{class:"viewTitle"},"Roles",-1),n=[a];function r(i,l){return s(),o("div",_,n)}const f=e(c,[["render",r]]);export{f as default};

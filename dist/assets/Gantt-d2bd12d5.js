@@ -1,0 +1,1 @@
+import{_ as e,o as t,a as s,e as c}from"./index-3700ea71.js";const o={},a={class:"view"},n=c("h1",{class:"viewTitle text-center"},"Gantt",-1),_=[n];function r(i,d){return t(),s("div",a,_)}const f=e(o,[["render",r]]);export{f as default};
